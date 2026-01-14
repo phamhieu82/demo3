@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 8000
 app.use(express.json());
 
 app.get("/", (req,res)=>{
-    res.send("<h1></h1>Hello world</h1>")
+    res.send("<h1>Hello world</h1>")
 })
 
 connectDB()
