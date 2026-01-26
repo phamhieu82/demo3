@@ -1,6 +1,9 @@
 import express from "express"
 
 
+// import connectDB  from "./lib/db.js";
+
+
 const app = express()
 
 const hostname = "localhost"
@@ -10,10 +13,11 @@ const PORT = process.env.PORT || 8000
 app.use(express.json());
 
 app.get("/", (req,res)=>{
-    res.send("<h1>Hello world</h1>")
+
+    res.send("<h1>Hello world how are you</h1>")
 })
 
-connectDB()
+// connectDB()
 app.listen(PORT,hostname, (req, res)=>{
     console.log(`Server run port http://${hostname}:${PORT}/`)
 
